@@ -4,6 +4,7 @@
     box-sizing: border-box;
     transition: all 0.4s;
     font-family: 'Belanosima', sans-serif;
+    font-family: 'Playfair Display', serif;
     /* font-family: 'Playfair Display', serif; */
     /* font-family: -apple-system,
     BlinkMacSystemFont,
@@ -31,6 +32,7 @@
     line-height: 65px;
     text-align: center;
     background-color: #fff;
+    z-index: 10;
 }
 
 .nav div.logo{
@@ -152,15 +154,15 @@
 .home{
     width: 100%;
     height: 100vh;
-    background-color: #fff;
+    background-color: #f5f5f5;
     display: flex;
     flex-direction: row;
     justify-content: center;
-    align-items: center;
-    
+    align-items: center;   
 }
 
 .home div.banner-container {
+    margin-top: 65px;
     width: 450px;
     height: 78vh;
     /* background-color: #ddd; */
@@ -174,7 +176,7 @@
 
 .home .banner-container .title-box {
     text-align: end;
-    background-color: #fff;
+    background-color: #f5f5f5;
     position: relative;
 }
 
@@ -215,20 +217,35 @@ h4 {
 .home .banner-container .title-box h1::before {
     position: absolute;
     right: 107px;
-    top: 58px;
+    top: 60px;
     content: ".";
     color: yellow;
+}
+
+/* About section */
+.about {
+    max-width: 1440px;
+    height: 100vh;
+}
+
+.about .about-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.about .about-container .right-content img {
+    height: 600px;
 }
 
 @media screen and (min-width: 768px) and (max-width: 1024px) {
     .container{
         margin: 0;
     }
-    
 }
-
-
-
 
 @media screen and (max-width:768px) {
     
@@ -308,7 +325,5 @@ h4 {
         .container{
             margin: 0;
         }
-        
-    }
-   
+    }  
 }
