@@ -212,6 +212,7 @@ h4 {
     font-weight: 600;
     line-height: 80%;
     padding-bottom: 8px;
+    margin-bottom: 5px;
 }
 
 .home .banner-container .title-box h1::before {
@@ -246,7 +247,7 @@ h4 {
     margin: 50px;
 }
 
-.about .about-container .left-content h2 {
+.about .about-container .left-content .hello {
     font-size: 120px;
     font-weight: 1000;
     font-style: italic;
@@ -258,9 +259,17 @@ h4 {
     margin-bottom: 50px;
 }
 
+.about .about-container .left-content p {
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 120%;
+    margin-bottom: 20px;
+}
+
 .about .about-container .right-content img {
     height: 600px;
-    margin: 50px;
+    margin-top: 50px;
+    margin-bottom: 50px;
 }
 
 /* @media screen and (min-width: 768px) and (max-width: 1024px) {
