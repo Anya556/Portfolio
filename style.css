@@ -219,7 +219,7 @@ h4 {
     right: 107px;
     top: 60px;
     content: ".";
-    color: yellow;
+    color: rgb(249, 213, 7);
 }
 
 /* About section */
@@ -231,26 +231,52 @@ h4 {
 .about .about-container {
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
     justify-content: space-evenly;
-    align-items: center;
-    margin-top: 30px;
-    margin-bottom: 30px;
+    align-items: flex-start;
+}
+
+.about .about-container .left-content {
+    width: 500px;
+    height: 500px;
+    display: flex;
+    flex-flow: column;
+    align-items: flex-start;
+    justify-content: space-evenly;
+    margin: 50px;
+}
+
+.about .about-container .left-content h2 {
+    font-size: 120px;
+    font-weight: 1000;
+    font-style: italic;
+    color: rgb(249, 213, 7);
+}
+
+.about .about-container .left-content h4 {
+    align-self: flex-start;
+    margin-bottom: 50px;
 }
 
 .about .about-container .right-content img {
     height: 600px;
+    margin: 50px;
 }
 
-@media screen and (min-width: 768px) and (max-width: 1024px) {
+/* @media screen and (min-width: 768px) and (max-width: 1024px) {
     .container{
         margin: 0;
     }
-}
+} */
 
 @media screen and (max-width:768px) {
     
     .container{
         margin: 0;
+    }
+
+    .nav{
+        width: 90%;
     }
     
     .nav div.logo{
@@ -319,6 +345,20 @@ h4 {
     .home .banner-container .title-box h1::before {
         right: 66px;
         top: 39px;
+    }
+
+    .about .about-container .left-content {
+        width: 90%;
+        margin: 2rem 2rem;
+    }
+    
+    .about .about-container .left-content h4 {
+        margin-bottom: 50px;
+    }
+    
+    .about .about-container .right-content img {
+        height: 600px;
+        margin: 50px;
     }
     
     @media screen and (min-width: 768px) and (max-width: 1024px) {
