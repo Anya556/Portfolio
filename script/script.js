@@ -9,3 +9,13 @@ mediaButton.onclick = function () {
     mediaButton.classList.toggle("active");
     
 };
+
+document.addEventListener("DOMContentLoaded", function () {
+    const aboutLink = document.querySelector('a[href="#about"]');
+    const aboutContainer = document.querySelector('.about-container');
+
+    aboutLink.addEventListener('click', function (event) {
+        event.preventDefault();
+        aboutContainer.scrollIntoView({ behavior: 'smooth' });
+    });
+});
