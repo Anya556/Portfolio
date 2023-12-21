@@ -14,11 +14,11 @@
             </div> -->
             <div class="main_list" id="mainListDiv">
                 <ul>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">Skills</a></li>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#skills">Skills</a></li>
                     <li><a href="#">Portfolio</a></li>
-                    <li><a href="#">Contact</a></li>
+                    <li><a href="#contact">Contact</a></li>
                 </ul>
             </div>
             <div class="media_button">
@@ -31,7 +31,7 @@
         </div>
     </nav>
         
-    <section class="home">
+    <section class="home" id="home">
         <div class="banner-container">
                 <h4>Front end developer</h4>
                 <!-- <h3>2022'</h3> -->
@@ -41,7 +41,7 @@
             </div>
         </div>
     </section>
-    <section class="about">
+    <section class="about" id="about">
         <div class="about-container">
             <div class="left-content">
                 <h4>| About me</h4>
@@ -59,19 +59,24 @@
             </div>
         </div>
     </section>
-    <section class="skills">
+    <section class="skills" id="skills">
         <div class="skills-container">
-            <h4>| Skills</h4>
-            <h2 class="yellow-title">My skills: </h2>
-            <p>React, Typescript, JavaScript, Redux, Styled-Components, Bootstrap, Material UI,
-                HTML, CSS, Git, GitHub, Jira.</p>
+            <div class="left-content">
+                <h4>| Skills</h4>
+                <h2 class="yellow-title">My skills: </h2>
+            </div>
+            <div class="central-content">
+                <p>React, Typescript, JavaScript, Redux, Styled-Components, Bootstrap, Material UI,
+                    HTML, CSS, Git, GitHub, Jira.</p>
+            </div>
+            
         </div>
     </section>
-    <section class="contact">
+    <section class="contact" id="contact">
         <div class="contact-container">
             <h4>| Contact info</h4>
-            <button>LinkedIn</button>
-            <button>GitHub</button>
+            <a href="https://www.linkedin.com/in/anna-makarova-537468230/" target="_blank">LinkedIn</a>
+            <a href="https://github.com/Anya556" target="_blank">GitHub</a>
             <p>Phone number:</p>
             <p>+48792042593</p>
         </div>
