@@ -239,6 +239,7 @@ p {
     margin-bottom: 50px;
 }
 .skills .skills-container div.right-content {
+    width: 550px;
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
@@ -246,7 +247,7 @@ p {
 }
 
 .skills .skills-container div.right-content img {
-    height: 150px;
+    height: 130px;
     margin: 5px;
     
     /* margin-top: 105px; */
